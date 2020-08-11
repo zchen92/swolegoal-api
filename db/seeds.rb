@@ -6,14 +6,19 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+User.create({
+    {username: "Zoe", password: "Zoe"}
+})
+
+
 Exercise.create([
-    { day: 'Monday 07/10/2020', description: 'Leg Day'   },
-    { day: 'Tuesday 07/11/2020', description: 'Arms Day'   },
-    { day: 'Wednesday 07/12/2020', description: 'Rest Day'   },
-    { day: 'Thursday 07/13/2020', description: 'Cardio Day'   },
-    { day: 'Friday 07/14/2020', description: 'Back Day'   },
-    { day: 'Saturday 07/15/2020', description: 'Rest Day'   },
-    { day: 'Sunday 07/16/2020', description: 'Abs Day'   }
+    { day: 'Monday 07/10/2020', description: 'Leg Day', user_id: "1"  },
+    { day: 'Tuesday 07/11/2020', description: 'Arms Day',user_id: "1"    },
+    { day: 'Wednesday 07/12/2020', description: 'Rest Day', user_id: "1"    },
+    { day: 'Thursday 07/13/2020', description: 'Cardio Day', user_id: "1"   },
+    { day: 'Friday 07/14/2020', description: 'Back Day', user_id: "1"    },
+    { day: 'Saturday 07/15/2020', description: 'Rest Day', user_id: "1"    },
+    { day: 'Sunday 07/16/2020', description: 'Abs Day', user_id: "1"    }
 ])
 
 Goal.create([
